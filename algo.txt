@@ -1,0 +1,50 @@
+
+epiphanymachine@gmail.com
+
+Assume a social network.
+Two people signed for your site, how many first connections between them?
+
+
+var graph = [ {node1:a, node2:c} ,{node1:c, node2:b}, {node1:c,node2:d}, {node1:d,node2:e}, {node1:c, node2:e}  ] ;
+
+
+var A = {
+    id : nameA,
+    distance_array : [  {node:'c',distance:1}]
+    distance_array : [  {node:'c',distance:1}, {node:'b',distance:2},
+    distance_array : [  {node:'c',distance:1}, {node:'b',distance:2},  {node:d, distance:2}, {node:e, distance:2}  ]
+},
+
+var B = {
+    id : nameb,
+    distance_array : [ {c,1}, {} ]
+}
+
+
+
+function getNumberOfNodesBetween(graph, node1, node2) {
+
+    var array1 = node1.distance_array;
+    array1.forEach(function(obj){
+   	 if (obj.node == node2) {
+   		 return obj.distance;
+   	 }
+    });
+
+}
+
+
+getFriend(node) => array of all of a user's friends
+getNumberOfNodesBetweeen(graph, A, B)
+
+What is the time complexity?
+What is the memory complexity?
+Assume each connection is assigned a relative probability of finding the other person?
+Wiki: Weighted Graph
+
+
+
+
+
+
+
