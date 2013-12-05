@@ -21,7 +21,7 @@ console.log("graph =" + JSON.stringify(graph));
 console.log("allNodes =" + allNodes);
 //console.log("dict = " + JSON.stringify(dict1) );
 
-
+// first pass to populate all the nodes
 var i =0;
 for ( i = 0; i < graph.length; i++ ) {
 
